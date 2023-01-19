@@ -7,7 +7,7 @@ COPY package*.json ./
 FROM base as test
 RUN npm install
 COPY . .
-CMD ["npm", "test"]
+RUN npm run test
 
 FROM base as build
 RUN npm install
