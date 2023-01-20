@@ -13,6 +13,10 @@ app.get("/feature2", (req, res) => {
   res.send("Feature 2");
 });
 
+app.get("/main", (req, res) => {
+  res.send("The main feature!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
