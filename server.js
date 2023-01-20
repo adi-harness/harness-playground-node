@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/feature1", (req, res) => {
-  res.send("This is your feature!!!");
+  res.send("This is your feature!");
 });
 
 app.listen(PORT, () => {
