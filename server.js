@@ -18,6 +18,10 @@ app.get("/feature-ci", (req, res) => {
   res.send("Feature Continuous Integration!");
 });
 
+app.get("/ci", (req, res) => {
+  res.send("Continuous integration is awesome!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
