@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
 
 app.get("/main", (req, res) => {
   res.send("The main feature!");
-  g;
 });
 
 app.get("/feature-ci", (req, res) => {
