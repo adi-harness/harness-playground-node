@@ -11,4 +11,7 @@ RUN npm test
 FROM base as dev
 RUN npm install
 COPY . .
+
+EXPOSE 8080
+
 CMD ["node", "server.js"]
