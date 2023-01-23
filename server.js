@@ -29,6 +29,9 @@ app.get("/demo", (req, res) => {
   res.send("hi");
 });
 
+app.get('/trigger', (req, res) => {
+  res.send('This should be working');
+});
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
