@@ -29,6 +29,10 @@ app.get("/demo", (req, res) => {
   res.send("hi");
 });
 
+app.get('/demo2', (req, res) => {
+  res.send("Second demo");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
