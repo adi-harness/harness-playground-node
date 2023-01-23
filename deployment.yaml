@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: adi-node-server
-  name: adi-node-server
+    app: adi-node-app-deployment
+  name: adi-node-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adi-node-server
+      app: adi-node-app-deployment
   template:
     metadata:
       labels:
-        app: adi-node-server
+        name: adi-node
     spec:
       containers:
         - image: adi1harness/node-server
-          name: adi-node-server
+          name: adi-node
           ports:
             - containerPort: 8080
