@@ -25,6 +25,10 @@ app.get("/ci", (req, res) => {
   res.send("Continuous integration is awesome!");
 });
 
+app.get("/demo", (req, res) => {
+  res.send("hi");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
