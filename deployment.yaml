@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        name: adi-node
+        app: adi-node
     spec:
       containers:
         - image: {{.Values.image}}
