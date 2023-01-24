@@ -15,7 +15,7 @@ spec:
         name: adi-node
     spec:
       containers:
-        - image: adi1harness/node-server
+        - image: {{.Values.image}}
           name: adi-node
           ports:
             - containerPort: 8080
