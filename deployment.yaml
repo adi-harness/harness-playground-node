@@ -2,13 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: adi-node-app-deployment
-  name: adi-node-deployment
+    app: adi-node
+  name: adi-node
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adi-node-app-deployment
+      app: adi-node
   template:
     metadata:
       labels:
