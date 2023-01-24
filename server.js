@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.send("Server is up!");
 });
 
+app.get('/pipeline', (req, res) => {
+  res.send('pipeline is awesome!');
+});
+
 app.get("/devops", (req, res) => {
   res.send("This is hard, but fun!");
 });
