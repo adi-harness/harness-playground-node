@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.send("Server is up!");
 });
 
+app.get('/adi-k8-cd', (req, res) => {
+  res.send("Yay, the final CD is working!");
+});
+
 app.get('/final-cd', (req, res) => {
   res.send("This is the final setup!");
 });
