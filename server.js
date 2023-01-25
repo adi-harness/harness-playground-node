@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.send("Server is up!");
 });
 
+app.get('/final-cd', (req, res) => {
+  res.send("This is the final setup!");
+});
+
 app.get('/pipeline', (req, res) => {
   res.send('pipeline is awesome!');
 });
